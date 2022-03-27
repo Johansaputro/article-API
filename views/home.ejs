@@ -1,0 +1,18 @@
+<%- include('header'); -%>
+
+<body>
+  <div class="content">
+    <% listArticle.forEach(function(article) {%>
+    <div class="articles">
+      <h1> <%=article.title%> </h1>
+      <p>
+        <%=article.content%>
+      </p>
+    </div>
+    <%});%>
+  </div>
+</body>
+
+<%- include('footer'); -%>
+
+</html>
